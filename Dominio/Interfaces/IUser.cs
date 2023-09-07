@@ -4,6 +4,6 @@ namespace Dominio.Interfaces
 {
     public interface IUser : IGenericRepository<User>
     {
-         Task<User> GetByUserbameAsync(string Username);
+         Task<User> GetByUsernameAsync(string Username);
     }
 }

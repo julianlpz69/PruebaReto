@@ -14,11 +14,14 @@ namespace Aplication.Repository
             _context = context;
         }
 
-        public async Task<User> GetByUserbameAsync(string username)
+       public async Task<User> GetByUsernameAsync(string userName)
         {
             return await _context.Users
-                                .Include(u => u.Rols)
-                                .FirstOrDefaultAsync(u => u.UserName.ToLower() == username.ToLower());
+                                    .Include(u => u.Rols)
+                                    .FirstOrDefaultAsync(u => u.UserName.ToLower() == userName.ToLower());
         }
+
+
+
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Api\\API.csproj": {}
+    "C:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\API\\API.csproj": {}
   },
   "projects": {
-    "c:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Api\\API.csproj": {
+    "C:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Api\\API.csproj",
+        "projectUniqueName": "C:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "c:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Api\\API.csproj",
+        "projectPath": "C:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\API\\API.csproj",
         "packagesPath": "C:\\Users\\APT01-51\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Api\\obj\\",
+        "outputPath": "C:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\APT01-51\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,8 +26,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "c:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Aplication\\Aplication.csproj": {
-                "projectPath": "c:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Aplication\\Aplication.csproj"
+              "C:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Aplication\\Aplication.csproj": {
+                "projectPath": "C:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Aplication\\Aplication.csproj"
               }
             }
           }
@@ -100,14 +100,14 @@
         }
       }
     },
-    "c:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Aplication\\Aplication.csproj": {
+    "C:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Aplication\\Aplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Aplication\\Aplication.csproj",
+        "projectUniqueName": "C:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Aplication\\Aplication.csproj",
         "projectName": "Aplication",
-        "projectPath": "c:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Aplication\\Aplication.csproj",
+        "projectPath": "C:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Aplication\\Aplication.csproj",
         "packagesPath": "C:\\Users\\APT01-51\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Aplication\\obj\\",
+        "outputPath": "C:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Aplication\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\APT01-51\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -122,11 +122,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "c:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Dominio\\Dominio.csproj": {
-                "projectPath": "c:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Dominio\\Dominio.csproj"
+              "C:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Dominio\\Dominio.csproj": {
+                "projectPath": "C:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Dominio\\Dominio.csproj"
               },
-              "c:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Persistencia\\Persistencia.csproj": {
-                "projectPath": "c:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Persistencia\\Persistencia.csproj"
+              "C:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Persistencia\\Persistencia.csproj": {
+                "projectPath": "C:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Persistencia\\Persistencia.csproj"
               }
             }
           }
@@ -160,14 +160,14 @@
         }
       }
     },
-    "c:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Dominio\\Dominio.csproj": {
+    "C:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Dominio\\Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "c:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Dominio\\Dominio.csproj",
+        "projectPath": "C:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Dominio\\Dominio.csproj",
         "packagesPath": "C:\\Users\\APT01-51\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Dominio\\obj\\",
+        "outputPath": "C:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\APT01-51\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -227,14 +227,14 @@
         }
       }
     },
-    "c:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Persistencia\\Persistencia.csproj": {
+    "C:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Persistencia\\Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Persistencia\\Persistencia.csproj",
+        "projectUniqueName": "C:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Persistencia\\Persistencia.csproj",
         "projectName": "Persistencia",
-        "projectPath": "c:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Persistencia\\Persistencia.csproj",
+        "projectPath": "C:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Persistencia\\Persistencia.csproj",
         "packagesPath": "C:\\Users\\APT01-51\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Persistencia\\obj\\",
+        "outputPath": "C:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\APT01-51\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -249,8 +249,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "c:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Dominio\\Dominio.csproj": {
-                "projectPath": "c:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Dominio\\Dominio.csproj"
+              "C:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Dominio\\Dominio.csproj": {
+                "projectPath": "C:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Dominio\\Dominio.csproj"
               }
             }
           }

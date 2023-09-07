@@ -15,3 +15,20 @@ C:\Users\APT01-51\Desktop\Nueva carpeta\pruebaReto\Aplication\obj\Debug\net7.0\A
 C:\Users\APT01-51\Desktop\Nueva carpeta\pruebaReto\Aplication\obj\Debug\net7.0\refint\Aplication.dll
 C:\Users\APT01-51\Desktop\Nueva carpeta\pruebaReto\Aplication\obj\Debug\net7.0\Aplication.pdb
 C:\Users\APT01-51\Desktop\Nueva carpeta\pruebaReto\Aplication\obj\Debug\net7.0\ref\Aplication.dll
+C:\Users\APT01-51\Desktop\CshartRepos\PruebaReto\Aplication\obj\Debug\net7.0\Aplication.csproj.AssemblyReference.cache
+C:\Users\APT01-51\Desktop\CshartRepos\PruebaReto\Aplication\obj\Debug\net7.0\Aplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\APT01-51\Desktop\CshartRepos\PruebaReto\Aplication\obj\Debug\net7.0\Aplication.AssemblyInfoInputs.cache
+C:\Users\APT01-51\Desktop\CshartRepos\PruebaReto\Aplication\obj\Debug\net7.0\Aplication.AssemblyInfo.cs
+C:\Users\APT01-51\Desktop\CshartRepos\PruebaReto\Aplication\obj\Debug\net7.0\Aplication.csproj.CoreCompileInputs.cache
+C:\Users\APT01-51\Desktop\CshartRepos\PruebaReto\Aplication\obj\Debug\net7.0\Aplication.dll
+C:\Users\APT01-51\Desktop\CshartRepos\PruebaReto\Aplication\obj\Debug\net7.0\refint\Aplication.dll
+C:\Users\APT01-51\Desktop\CshartRepos\PruebaReto\Aplication\obj\Debug\net7.0\Aplication.pdb
+c:\Users\APT01-51\Desktop\CshartRepos\PruebaReto\Aplication\bin\Debug\net7.0\Aplication.deps.json
+C:\Users\APT01-51\Desktop\CshartRepos\PruebaReto\Aplication\bin\Debug\net7.0\Aplication.dll
+C:\Users\APT01-51\Desktop\CshartRepos\PruebaReto\Aplication\bin\Debug\net7.0\Aplication.pdb
+C:\Users\APT01-51\Desktop\CshartRepos\PruebaReto\Aplication\bin\Debug\net7.0\Dominio.dll
+C:\Users\APT01-51\Desktop\CshartRepos\PruebaReto\Aplication\bin\Debug\net7.0\Persistencia.dll
+C:\Users\APT01-51\Desktop\CshartRepos\PruebaReto\Aplication\bin\Debug\net7.0\Dominio.pdb
+C:\Users\APT01-51\Desktop\CshartRepos\PruebaReto\Aplication\bin\Debug\net7.0\Persistencia.pdb
+c:\Users\APT01-51\Desktop\CshartRepos\PruebaReto\Aplication\obj\Debug\net7.0\Aplication.csproj.CopyComplete
+c:\Users\APT01-51\Desktop\CshartRepos\PruebaReto\Aplication\obj\Debug\net7.0\ref\Aplication.dll

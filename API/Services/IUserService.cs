@@ -6,5 +6,6 @@ namespace API.Services
     {
          Task<string> RegisterAsync (RegisterDto model);
          Task<DatosUserDto> GetTokenAsync (LoginDto model);
+         Task<string> AddRoleAsync (AddRoleDto model);
     }
 }
