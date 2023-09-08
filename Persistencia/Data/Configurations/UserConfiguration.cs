@@ -25,7 +25,7 @@ namespace Persistencia.Data.Configurations
 
             builder.Property(e => e.UserPassword)
                 .HasColumnType("varchar")
-                .HasMaxLength(50)
+                .HasMaxLength(255)
                 .IsRequired();
 
                 
@@ -38,7 +38,7 @@ namespace Persistencia.Data.Configurations
                 .HasForeignKey(ut => ut.IdRol),
 
                 j => j.HasOne(et => et.User)
-                .WithMany(et => et.UsersRols)
+                .WithMany(et => et.UsersRols) 
                 .HasForeignKey(h => h.IdUser),
 
                 j => 

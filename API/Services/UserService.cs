@@ -37,7 +37,7 @@ namespace API.Services
             var usuario = new User 
             {
                 UserEmail = registerDto.UserEmail,
-                UserName = registerDto.UserName,
+                UserName = registerDto.UserName
             };
             
             usuario.UserPassword = _passwordHasher.HashPassword(usuario, registerDto.UserPassword);
@@ -121,94 +121,93 @@ namespace API.Services
 
         
         public async Task<DatosUserDto> GetTokenAsync(LoginDto model)
+    {
+        DatosUserDto datosUsuarioDto = new DatosUserDto();
+        var usuario = await _unitOfWork.Users
+                        .GetByUsernameAsync(model.UserName);
+
+        if (usuario == null)
         {
-            DatosUserDto datosUserDto = new DatosUserDto();
-            var usuario = await _unitOfWork.Users
-                            .GetByUsernameAsync(model.UserName);
-
-            if (usuario == null)
-            {
-                datosUserDto.EstadoAutenticado = false;
-                datosUserDto.Mensaje = $"No existe ningun usuario con el username {model.UserName}.";
-                return datosUserDto;
-            }
-
-            var result = _passwordHasher.VerifyHashedPassword(usuario, usuario.UserPassword, model.UserPassword);
-            if (result == PasswordVerificationResult.Success)
-            {
-                datosUserDto.Mensaje = "OK";
-                datosUserDto.EstadoAutenticado = true;
-                if (usuario != null && usuario != null)
-                {
-                    JwtSecurityToken jwtSecurityToken = CreateJwtToken(usuario);
-                    datosUserDto.Token = new JwtSecurityTokenHandler().WriteToken(jwtSecurityToken);
-                    datosUserDto.UserName = usuario.UserName;
-                    datosUserDto.UserEmail = usuario.UserEmail;
-                    datosUserDto.Roles = usuario.Rols
-                                                        .Select(p => p.NombreRol)
-                                                        .ToList();
-
-
-                    return datosUserDto;
-                }
-                else
-                {
-                    datosUserDto.EstadoAutenticado = false;
-                    datosUserDto.Mensaje = $"Credenciales incorrectas para el usuario {usuario.UserName}.";
-
-                    return datosUserDto;
-                }
-            }
-
-            datosUserDto.EstadoAutenticado = false;
-            datosUserDto.Mensaje = $"Credenciales incorrectas para el usuario {usuario.UserName}.";
-
-            return datosUserDto;
+            datosUsuarioDto.EstadoAutenticado = false;
+            datosUsuarioDto.Mensaje = $"No existe ningun usuario con el username {model.UserName}.";
+            return datosUsuarioDto;
         }
 
-
-
-
-        private JwtSecurityToken CreateJwtToken(User usuario)
+        var result = _passwordHasher.VerifyHashedPassword(usuario, usuario.UserPassword, model.UserPassword);
+        if (result == PasswordVerificationResult.Success)
         {
-            if (usuario == null)
+            datosUsuarioDto.Mensaje = "OK";
+            datosUsuarioDto.EstadoAutenticado = true;
+            if (usuario != null)
             {
-                throw new ArgumentNullException(nameof(usuario), "El usuario no puede ser nulo.");
-            }
+                JwtSecurityToken jwtSecurityToken = CreateJwtToken(usuario);
+                datosUsuarioDto.Token = new JwtSecurityTokenHandler().WriteToken(jwtSecurityToken);
+                datosUsuarioDto.UserName = usuario.UserName;
+                datosUsuarioDto.UserEmail = usuario.UserEmail;
+                datosUsuarioDto.Roles = usuario.Rols
+                                                    .Select(p => p.NombreRol)
+                                                    .ToList();
 
-            var roles = usuario.Rols;
-            var roleClaims = new List<Claim>();
-            foreach (var role in roles)
-            {
-                roleClaims.Add(new Claim("roles", role.NombreRol));
-            }
 
-            var claims = new[]
+                return datosUsuarioDto;
+            }
+            else
             {
+                datosUsuarioDto.EstadoAutenticado = false;
+                datosUsuarioDto.Mensaje = $"Credenciales incorrectas para el usuario {usuario.UserName}.";
+
+                return datosUsuarioDto;
+            }
+        }
+
+        datosUsuarioDto.EstadoAutenticado = false;
+        datosUsuarioDto.Mensaje = $"Credenciales incorrectas para el usuario {usuario.UserName}.";
+
+        return datosUsuarioDto;
+
+    }
+
+    private JwtSecurityToken CreateJwtToken(User usuario)
+    {
+        if (usuario == null)
+        {
+            throw new ArgumentNullException(nameof(usuario), "El usuario no puede ser nulo.");
+        }
+
+        var roles = usuario.Rols ;
+        var roleClaims = new List<Claim>();
+        foreach (var role in roles)
+        {
+            roleClaims.Add(new Claim("roles", role.NombreRol));
+        }
+
+        var claims = new[]
+        {
                 new Claim(JwtRegisteredClaimNames.Sub, usuario.UserName),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
                 new Claim("uid", usuario.Id.ToString())
             }
-            .Union(roleClaims);
+        .Union(roleClaims);
 
-            if (string.IsNullOrEmpty(_jwt.Key) || string.IsNullOrEmpty(_jwt.Issuer) || string.IsNullOrEmpty(_jwt.Audience))
-            {
-                throw new ArgumentNullException("La configuración del JWT es nula o vacía.");
-            }
-
-            var symmetricSecurityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwt.Key));
-
-            var signingCredentials = new SigningCredentials(symmetricSecurityKey, SecurityAlgorithms.HmacSha256Signature);
-
-            var JwtSecurityToken = new JwtSecurityToken(
-                issuer: _jwt.Issuer,
-                audience: _jwt.Audience,
-                claims: claims,
-                expires: DateTime.UtcNow.AddMinutes(_jwt.DurationInMinutes),
-                signingCredentials: signingCredentials);
-
-            return JwtSecurityToken;
+        if (string.IsNullOrEmpty(_jwt.Key) || string.IsNullOrEmpty(_jwt.Issuer) || string.IsNullOrEmpty(_jwt.Audience))
+        {
+            throw new ArgumentNullException("La configuración del JWT es nula o vacía.");
         }
+
+        var symmetricSecurityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwt.Key));
+
+        var signingCredentials = new SigningCredentials(symmetricSecurityKey, SecurityAlgorithms.HmacSha256Signature);
+
+        var JwtSecurityToken = new JwtSecurityToken(
+            issuer: _jwt.Issuer,
+            audience: _jwt.Audience,
+            claims: claims,
+            expires: DateTime.UtcNow.AddMinutes(_jwt.DurationInMinutes),
+            signingCredentials: signingCredentials);
+
+        return JwtSecurityToken;
+    }
+
 
     }
 }

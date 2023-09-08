@@ -6079,11 +6079,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\API\\API.csproj",
+      "projectUniqueName": "c:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Api\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\API\\API.csproj",
+      "projectPath": "c:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Api\\API.csproj",
       "packagesPath": "C:\\Users\\APT01-51\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\API\\obj\\",
+      "outputPath": "c:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\APT01-51\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -6098,8 +6098,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Aplication\\Aplication.csproj": {
-              "projectPath": "C:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Aplication\\Aplication.csproj"
+            "c:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Aplication\\Aplication.csproj": {
+              "projectPath": "c:\\Users\\APT01-51\\Desktop\\CshartRepos\\PruebaReto\\Aplication\\Aplication.csproj"
             }
           }
         }

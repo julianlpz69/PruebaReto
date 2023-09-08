@@ -9,7 +9,7 @@ namespace API.Helpers
 
         public GlobalVerbRolHandler(IHttpContextAccessor httpContextAccessor)
         {
-            this._httpContextAccessor = httpContextAccessor;
+            _httpContextAccessor = httpContextAccessor;
         }
 
         protected override Task HandleRequirementAsync(AuthorizationHandlerContext context, GlobalVerbRolRequirement requirement)
@@ -17,7 +17,7 @@ namespace API.Helpers
             var roles = context.User.FindAll(c => string.Equals(c.Type, ClaimTypes.Role)).Select(c => c.Value);
             var verb = _httpContextAccessor.HttpContext?.Request.Method;
 
-            if (string.IsNullOrEmpty(verb)){throw new Exception($"request cann't be null");}
+            if (String.IsNullOrEmpty(verb)){throw new Exception($"request cann't be null");}
 
             foreach (var role in roles)
             {
@@ -27,7 +27,7 @@ namespace API.Helpers
                     return Task.CompletedTask;
                 }
             } 
-            context.Succeed(requirement);
+            context.Fail();
             return Task.CompletedTask;
         }
     }
